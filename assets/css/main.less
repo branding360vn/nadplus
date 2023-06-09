@@ -1,0 +1,30 @@
+@import "/less/_variables";
+@import "/less/_title";
+@import "/less/_header";
+@import "/less/_home";
+@import "/less/_footer";
+@import "/less/_post";
+@import "/less/_sidebar";
+@import "/less/_base";
+
+body {
+    line-height: 1.4 !important;
+    font-size: 0.9375rem !important;
+}
+&::-webkit-scrollbar {
+    display: none;
+}
+.gioi-han-dong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.pb-15 {
+    padding-bottom: 15px !important;
+}
+@media (min-width: 36em) {
+    .ver-post .box-text {
+        vertical-align: top !important;
+    }
+}

@@ -1,0 +1,67 @@
+// Footer
+.footer-360 .footer-wrapper {
+    .footer-col-address {
+        .icon-box {
+            margin-bottom: 6px;
+            align-items: center;
+            .icon-box-img {
+                max-width: 17px;
+            }
+            .icon-box-text:not(:last-child) {
+                padding-bottom: 2px;
+            }
+        }
+    }
+    .ux-logo.logo-footer>div {
+        padding: 0 !important;
+        max-width: 240px;
+        img {
+            object-fit: contain;
+        }
+    }
+    .icon-text-pt>p {
+        padding-top: 4px;
+    }
+    .chinh-sach .menu-item {
+        a>span {
+            color: @white-color;
+            font-size: 1rem;
+            font-weight: 500;
+            &::before {
+                content: '>';
+                font-size: 0;
+                transition: .3s;
+            }
+        }
+        &:hover a>span::before {
+            font-size: 1rem;
+            transition: .3s;
+        }
+    }
+    .social-footer>.col-inner {
+        display: flex;
+        .social-icon {
+            max-width: 38px;
+            transition: .3s;
+            &:hover {
+                transform: scale(1.05);
+                transition: .3s;
+            }
+            &:not(:last-child) {
+                margin-right: 8px !important;
+            }
+        }
+    }
+}
+// Copyright
+footer .absolute-footer {
+    padding: 20px 0 23px;
+    border-top: 1px solid fade(@white-color, 50%);
+    .footer-text {
+        color: @white-color;
+        font-size: 1rem;
+        strong {
+            font-weight: 500;
+        }
+    }
+}

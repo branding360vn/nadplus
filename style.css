@@ -1,0 +1,164 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+/* Home */
+/* Header */
+/* header ul.header-nav>li.header-search>a>i.icon-search {
+    display: inline-block;
+} */
+/* Add font */
+@font-face {
+    font-family: "utm";
+    font-weight: bold;
+    src: url(../flatsome-child/assets/fonts/utm-bienvenue.ttf) format("truetype");
+    font-display: swap;
+}
+/* Banner */
+.banner-tmv .flickity-button:hover>svg>path {
+    fill: #fff !important;
+}
+/* Blog layout */
+.post-item .box-text>div>.is-divider {
+    display: none;
+}
+.archive.category .blog-wrapper.blog-archive.page-wrapper {
+    padding-bottom: 0;
+}
+/* Single */
+.archive.category .breadcrumb-wrapper {
+    padding-left: 30px;
+}
+
+/* Hidden title category */
+.page-title-hidden-360 {
+    display: none;
+}
+.archive.category .border-left-sidebar {
+    border-left: 1px solid #eee;
+}
+
+/* Component */
+/* Bài viết liên quan */
+.related-box .related-head {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: var(--primary-color);
+}
+.feature {
+    position: relative;
+    overflow: hidden;
+}
+.feature::before {
+	content: "";
+	display: block;
+	padding-top: 56.25%;
+}
+.feature .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+}
+.related-title {
+    line-height: 1.3 !important;
+    margin-top: 10px !important;
+}
+.related-title>a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/*  */
+/* Destop */
+@media (min-width: 850px) {
+    /* Blog layout */
+    .blog-box-layout-360.large-9 {
+        max-width: calc(75% - 20px);
+    }
+}
+/* Tablet & Destop */
+@media (min-width: 550px) {
+    /* contact btn */
+    div#button-contact-vr {
+        bottom: 75px;
+    }
+}
+/* Mobile */
+@media (max-width: 549px) {
+    /*  */
+    .single-post .space-blog-layout {
+        display: none;
+    }
+    /* 404 */
+    .layout-404 .title-360 h3>span {
+        font-size: 17px !important;
+    }
+    /* pop-up */
+    .pop-up-360 {
+        width: 92% !important;
+    }
+    .pop-up-360>section {
+        padding: 15px;
+    }
+    /* contact btn */
+    div#button-contact-vr {
+        left: 90px;
+    }
+}
+
+/* Back to top */
+a.back-to-top.button {
+    border-color: #fff;
+}
+a.back-to-top.button:hover {
+    border-color: var(--primary-color);
+}
+a.back-to-top.button>i {
+    color: #fff;
+}
+/* Pop-up */
+.pop-up-360, .pop-up-360>section {
+    border-radius: 16px;
+}
+/* Mục lục */
+.ftwp-in-post#ftwp-container-outer.ftwp-float-right,
+.ftwp-in-post#ftwp-container-outer.ftwp-float-right #ftwp-contents {
+    width: 100%;
+}
+/* more */
+.ftwp-wrap#ftwp-container>button {
+    border-radius: 8px !important;
+}
+
+/* Hidden link website - comment */
+/* .comment-form-url {
+    display: none;
+} */
+
+/* Trang lien he */
+.single-post.postid-1878 .related-post-360 {
+    display: none;
+}
+.single-post.postid-1878 .excerpt-box {
+    font-size: 1rem;
+}
+
+/* Small */
+@media (max-width: 48em) {
+    .truoc-sau .bafg-slider-info-wraper .bafg-slider-info {
+        display: none;
+    }
+}
