@@ -13,7 +13,6 @@ Version: 3.0
     display: inline-block;
 } */
 /* Add font */
-
 @font-face {
     font-family: "utm";
     font-weight: bold;
@@ -90,13 +89,6 @@ Version: 3.0
         max-width: calc(75% - 20px);
     }
 }
-/* Tablet & Destop */
-@media (min-width: 550px) {
-    /* contact btn */
-    div#button-contact-vr {
-        bottom: 75px;
-    }
-}
 /* Mobile */
 @media (max-width: 549px) {
     /*  */
@@ -113,10 +105,6 @@ Version: 3.0
     }
     .pop-up-360>section {
         padding: 15px;
-    }
-    /* contact btn */
-    div#button-contact-vr {
-        left: 90px;
     }
 }
 

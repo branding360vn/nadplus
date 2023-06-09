@@ -28,3 +28,94 @@ body {
         vertical-align: top !important;
     }
 }
+
+// contact 
+.right-contact-wrpapper {
+    position: fixed;
+    right: 0;
+    bottom: 170px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    a {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        &:first-child>div {
+            background-color: #4267B2;
+            &.icon-img {
+                border-radius: 8px 0 0 0;
+            }
+        }
+        &:nth-child(2)>div {
+            background-color: #007FF7;
+        }
+        &:last-child>div {
+            background-color: #7761DF;
+            &.icon-img {
+                border-radius: 0 0 0 8px;
+            }
+        }
+        .icon-img {
+            width: 54px;
+            height: 54px;
+            max-width: 54px;
+            max-height: 54px;
+            padding: 15px 11px 11px 15px;
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        .contact-app {
+            min-width:  @name-contact;
+            border-radius: 8px 0 0 8px;
+            color: @white-color;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            height: 54px;
+            z-index: 9;
+            right: 54px;
+            transform: rotateY(-90deg);
+            transform-origin: 100% 0 0;
+            transition: .3s;
+        }
+        &:hover {
+            .icon-img {
+                border-radius: unset !important;
+            }
+            .contact-app {
+                transform: rotate(0);
+                transition: .3s;
+            }
+        }
+    }
+}
+@media screen and (min-width: 736px) {
+    // contact btn
+    div#button-contact-vr {
+        #zalo-vr {
+            display: none;
+        }
+    }
+    // Hidden fb chat
+    #fb-root {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 735px) {
+    // contact btn
+    div#button-contact-vr {
+        left: 90px;
+        >div {
+            display: flex;
+        }
+    }
+    // Contact right
+    .right-contact-wrpapper {
+        display: none;
+    }
+}

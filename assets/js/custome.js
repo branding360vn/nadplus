@@ -1,4 +1,5 @@
 jQuery(document).ready(function ($) {
+
     let phanHoi = $('.phan-hoi-wrapper .col');
     phanHoi.removeClass('medium-4 small-12 large-4');
 
